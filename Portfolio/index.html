@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8">
   <title>Chad's Portfolio</title>
@@ -8,10 +8,10 @@
   <meta name="description" content="Lean Chad A. Masungsong's personal portfolio website.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
-
 
 <body>
 
@@ -22,19 +22,19 @@
     <img src="../images/roblox.png" class="float f3" alt="">
     <img src="../images/pz.png" class="float f4" alt="">
     <img src="../images/dota.png" class="float f5" alt="">
-</div>
+  </div>
 
   <!--HEADER / NAVBAR-->
   <header class="site-header">
     <div class="container nav-bar">
-      <a href="#" class="brand"><span class="logo"><img src=../images/Yoda.png></span>Lean Chad</a>
+      <a href="#Home" class="brand"><span class="logo"><img src="../images/Yoda.png" alt="Lean Chad logo"></span>Lean Chad</a>
       <nav aria-label="Navigation">
         <ul class="nav-links">
-          <li><a href="#Home" class="active">Home</a></li>
+          <li><a href="#Home">Home</a></li>
           <li><a href="#Profile">About</a></li>
           <li><a href="#TechStack">Skills</a></li>
-          <li><a href="#Path">Projects</a></li>
-          <li><a href="#Path">Approach</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Approach">Approach</a></li>
         </ul>
       </nav>
       <a href="#Socials" class="btn-connect">Let's connect <span>&#8599;</span></a>
@@ -51,7 +51,7 @@
         <p class="role">DIT Student at PUP-Taguig | Driven to Build</p>
         <p class="intro">I'm Lean Chad, a student, gamer, hobbyiest turning curiosity into code and fun. I'm learning to create thoughtful digital experiences, one idea and one iteration at a time.</p>
         <div class="hero-buttons">
-          <a href="#Path" class="btn btn-primary">Explore concepts <span>&#8595;</span></a>
+          <a href="#Projects" class="btn btn-primary">Explore concepts <span>&#8595;</span></a>
           <a href="#Profile" class="btn btn-secondary">About me <span>&#8599;</span></a>
         </div>
       </div>
@@ -78,7 +78,7 @@
     </section>
 
     <!--PROFILE SECTION-->
- <section id="Profile" class="block container">
+    <section id="Profile" class="block container">
       <div class="about-grid">
         <div>
           <p class="label">01 / About</p>
@@ -200,18 +200,19 @@
           <h2 class="block-title">Good things start with a conversation.</h2>
           <p class="block-text">Interested in collaborating, sharing feedback, or just saying hello? My inbox and socials are open.</p>
           <div class="social-links">
-            <a href="https://www.facebook.com/leanchad.masungsong.7">Facebook</a>
-            <a href="https://www.linkedin.com/in/lean-chad-masungsong-01941b368/">LinkedIn</a>
-            <a href="https://github.com/leanchad21-boop">GitHub</a>
+            <a href="https://www.facebook.com/leanchad.masungsong.7" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/lean-chad-masungsong-01941b368/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/leanchad21-boop" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
 
-        <form class="form" action="#" method="post">
+        <!-- Replace YOUR_FORM_ID with your ID from formspree.io -->
+        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="post">
           <div class="row">
-            <label>Your name<input type="text" placeholder="Your name"></label>
-            <label>Email address<input type="email" placeholder="you@email.com"></label>
+            <label>Your name<input type="text" name="name" placeholder="Your name" required></label>
+            <label>Email address<input type="email" name="email" placeholder="you@email.com" required></label>
           </div>
-          <label>Message<textarea rows="5" placeholder="Tell me what's on your mind..."></textarea></label>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell me what's on your mind..." required></textarea></label>
           <button type="submit" class="btn btn-primary btn-full">Send message <span>&#8599;</span></button>
         </form>
       </div>
@@ -219,10 +220,11 @@
 
     <!--FOOTER-->
     <footer class="container footer">
-      <a href="#" class="brand"><span class="logo">lc.</span>Lean Chad</a>
+      <a href="#Home" class="brand"><span class="logo"><img src="../images/Yoda.png" alt="Lean Chad logo"></span>Lean Chad</a>
       <p>&copy; 2026 Lean Chad A. Masungsong</p>
       <a href="#Home" class="to-top">Back to top &#8593;</a>
     </footer>
   </main>
 </body>
+
 </html>
