@@ -1,0 +1,223 @@
+/* =========================================================
+   RESPONSIVE STYLES: tablets & phones
+   ========================================================= */
+
+@media (max-width: 820px) {
+  .nav-links {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: left;
+  }
+  .photo-card {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 820px) {
+  .about-grid,
+  .contact,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form .row {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 820px) {
+  .float {
+    width: 80px;
+    opacity: 0.15;
+  }
+  .f1 {
+    width: 110px;
+  }
+}
+
+@media (max-width: 820px) {
+  body {
+    font-size: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(1.4rem, 7vw, 2.2rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 18px;
+    font-size: 9px;
+  }
+  .hero {
+    grid-template-columns: 1.2fr 1fr;
+    padding: 80px 24px;
+  }
+  .photo-card {
+    max-width: 420px;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  html {
+    scroll-padding-top: 120px;
+  } /* header is two rows tall here */
+
+  /* header: row 1 = logo + button, row 2 = nav links */
+  .nav-bar {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding: 10px 0 0;
+  }
+  .brand {
+    order: 1;
+  }
+  .btn-connect {
+    order: 2;
+  }
+  .nav-bar nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 12px;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    width: 100%;
+    min-width: max-content;
+    font-size: 9px;
+  }
+  .nav-links a {
+    display: block;
+    padding: 8px 2px 6px;
+    white-space: nowrap;
+  }
+  .nav-links a::after {
+    bottom: 0;
+  }
+
+  /* hero */
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 50px 16px 60px;
+    gap: 36px;
+  }
+  .intro {
+    max-width: 100%;
+  }
+  .hero-buttons {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .photo-card {
+    max-width: 420px;
+    margin-inline: auto;
+  }
+
+  /* sections */
+  .block {
+    padding: 60px 0;
+  }
+  .about-grid {
+    gap: 36px;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact {
+    gap: 30px;
+  }
+
+  /* floating logos: fainter so they don't hide the text */
+  .float {
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-connect {
+    display: none;
+  }
+  .nav-contact {
+    display: block;
+  }
+  .brand {
+    font-size: 10px;
+  }
+  .nav-links {
+    gap: 10px;
+    font-size: 8px;
+  }
+
+  .eyebrow {
+    letter-spacing: 1px;
+    font-size: 8px;
+  }
+  .name {
+    font-size: 26px;
+  }
+  .hero-buttons .btn {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .photo-card {
+    height: 320px;
+  }
+  .photo-card::before {
+    width: 220px;
+    height: 220px;
+  }
+  .photo-card img {
+    width: 230px;
+    height: 343px;
+    margin-top: -115px;
+  }
+  .code-card {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 22px 10px 8px;
+  }
+  .code-card pre {
+    font-size: 13px;
+    overflow-x: auto;
+  }
+
+  .block-title {
+    font-size: 1.05rem;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  .contact {
+    padding: 18px;
+  }
+  .social-links {
+    flex-wrap: wrap;
+  }
+  .footer {
+    text-align: center;
+  }
+}
