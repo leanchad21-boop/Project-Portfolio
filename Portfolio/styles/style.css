@@ -1376,3 +1376,39 @@ body:has(#Socials:target) .nav-links a[href="#Socials"]::after {
 body:has(#Socials:target) .nav-links a[href="#Socials"] {
   color: var(--yellow);
 }
+
+/* ===== Mobile menu controls (hidden on desktop, shown by responsive.css) ===== */
+.menu-open,
+.menu-close,
+.menu-backdrop,
+.menu-anchor {
+  display: none;
+}
+
+.menu-open,
+.menu-close {
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  font-family: var(--px);
+  font-size: 10px;
+  color: var(--text);
+  background: var(--panel);
+  border: 3px solid var(--border);
+  box-shadow: 3px 3px 0 var(--shadow);
+}
+.menu-open:hover,
+.menu-close:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+/* the three bars */
+.bars {
+  width: 20px;
+  height: 14px;
+  background:
+    linear-gradient(currentColor, currentColor) 0 0 / 100% 3px no-repeat,
+    linear-gradient(currentColor, currentColor) 0 50% / 100% 3px no-repeat,
+    linear-gradient(currentColor, currentColor) 0 100% / 100% 3px no-repeat;
+}

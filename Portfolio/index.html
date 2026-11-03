@@ -1,258 +1,386 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chad's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lean Chad A. Masungsong's personal portfolio website."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Chad's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lean Chad A. Masungsong's personal portfolio website.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&family=Press+Start+2P&family=VT323&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/responsive.css">
-</head>
-
-<body>
-
-  <!--RANDOM ELEMENTS IN BACKGROUND HEHEHE-->
-  <div class="floating-bg" aria-hidden="true">
-    <img src="../images/mh.png" class="float f1" alt="">
-    <img src="../images/valo.png" class="float f2" alt="">
-    <img src="../images/roblox.png" class="float f3" alt="">
-    <img src="../images/pz.png" class="float f4" alt="">
-    <img src="../images/dota.png" class="float f5" alt="">
-  </div>
-
-  <!--HEADER / NAVBAR-->
-  <header class="site-header">
-    <div class="container nav-bar">
-      <a href="#Home" class="brand"><span class="logo"><img src="../images/Yoda.png" alt="Lean Chad logo"></span>Lean
-        Chad</a>
-      <nav aria-label="Navigation">
-        <ul class="nav-links">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Profile">About</a></li>
-          <li><a href="#TechStack">Skills</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#Approach">Approach</a></li>
-          <li class="nav-contact"><a href="#Socials">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#Socials" class="btn-connect">Let's connect <span>&#8599;</span></a>
+  <body>
+    <!--RANDOM ELEMENTS IN BACKGROUND HEHEHE-->
+    <div class="floating-bg" aria-hidden="true">
+      <img src="../images/mh.png" class="float f1" alt="" />
+      <img src="../images/valo.png" class="float f2" alt="" />
+      <img src="../images/roblox.png" class="float f3" alt="" />
+      <img src="../images/pz.png" class="float f4" alt="" />
+      <img src="../images/dota.png" class="float f5" alt="" />
     </div>
-  </header>
 
-  <main>
-    <!--HERO SECTION-->
-    <section id="Home" class="hero container">
-      <div class="hero-text">
-        <p class="eyebrow">Developer in the making</p>
-        <h2 class="name">Lean Chad A. Masungsong</h2>
-        <h1>Aspiring <span class="accent">Software Developer</span></h1>
-        <p class="role">DIT Student at PUP-Taguig | Driven to Build</p>
-        <p class="intro">I'm Lean Chad, a student, gamer, hobbyiest turning curiosity into code and fun. I'm learning to
-          create thoughtful digital experiences, one idea and one iteration at a time.</p>
-        <div class="hero-buttons">
-          <a href="#Projects" class="btn btn-primary">Explore concepts <span>&#8595;</span></a>
-          <a href="#Profile" class="btn btn-secondary">About me <span>&#8599;</span></a>
-        </div>
+    <!--MOBILE MENU SWITCH (empty on purpose, the 3-bar button points here)-->
+    <span id="menu" class="menu-anchor"></span>
+
+    <!--HEADER / NAVBAR-->
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="#Home" class="brand"
+          ><span class="logo"
+            ><img src="../images/Yoda.png" alt="Lean Chad logo" /></span
+          >Lean Chad</a
+        >
+        <nav aria-label="Navigation">
+          <!-- 3-bar button: opens the menu (phones/tablets only) -->
+          <a href="#menu" class="menu-open" aria-label="Open menu"
+            ><span class="bars"></span><span class="menu-label"></span
+          ></a>
+          <!-- X button: closes the menu -->
+          <a href="#!" class="menu-close" aria-label="Close menu"
+            ><span>X</span><span class="menu-label"></span
+          ></a>
+          <!-- tap outside to close -->
+          <a
+            href="#!"
+            class="menu-backdrop"
+            aria-label="Close menu"
+            tabindex="-1"
+          ></a>
+          <ul class="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Profile">About</a></li>
+            <li><a href="#TechStack">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Approach">Approach</a></li>
+            <li class="nav-contact"><a href="#Socials">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#Socials" class="btn-connect"
+          >Let's connect <span>&#8599;</span></a
+        >
       </div>
+    </header>
 
-      <div class="hero-visual">
-        <div class="photo-card">
-          <img src="../images/GradImage.png" alt="Lean Chad in graduation attire">
-          <div class="code-card">
-            <div class="code-top">
-              <span class="dots"><i></i><i></i><i></i></span>
-              <span class="file">profile.js</span>
-              <span class="tag">&lt; / &gt;</span>
-            </div>
-            <pre><code><span class="k">const</span> 
+    <main>
+      <!--HERO SECTION-->
+      <section id="Home" class="hero container">
+        <div class="hero-text">
+          <p class="eyebrow">Developer in the making</p>
+          <h2 class="name">Lean Chad A. Masungsong</h2>
+          <h1>Aspiring <span class="accent">Software Developer</span></h1>
+          <p class="role">DIT Student at PUP-Taguig | Driven to Build</p>
+          <p class="intro">
+            I'm Lean Chad, a student, gamer, hobbyiest turning curiosity into
+            code and fun. I'm learning to create thoughtful digital experiences,
+            one idea and one iteration at a time.
+          </p>
+          <div class="hero-buttons">
+            <a href="#Projects" class="btn btn-primary"
+              >Explore concepts <span>&#8595;</span></a
+            >
+            <a href="#Profile" class="btn btn-secondary"
+              >About me <span>&#8599;</span></a
+            >
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="photo-card">
+            <img
+              src="../images/GradImage.png"
+              alt="Lean Chad in graduation attire"
+            />
+            <div class="code-card">
+              <div class="code-top">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="file">profile.js</span>
+                <span class="tag">&lt; / &gt;</span>
+              </div>
+              <pre><code><span class="k">const</span> 
               
               
   developer = {
   name: <span class="s">"Lean Chad"</span>,
   mindset: <span class="s">"learn → build → refine"</span>}; 
             </code></pre>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--PROFILE SECTION-->
-    <section id="Profile" class="block container">
-      <div class="about-grid">
-        <div>
-          <p class="label">01 / About</p>
-          <h2 class="block-title">A curious mind.<br>A builder's mindset.</h2>
-          <p class="block-text">I am a College Student at the Polytechnic University of the Philippines - Taguig Branch,
-            pursuing a Diploma in Information Technology.</p>
-          <p class="block-text">I am an aspiring Software Developer with a fuel to create positive impact toward Science
-            and Community through programming.</p>
-        </div>
-
-        <aside class="card edu-card">
-          <div class="edu-top">
-            <span class="chip">Education</span>
-            <span class="chip chip-dim">PUP-Taguig</span>
+      <!--PROFILE SECTION-->
+      <section id="Profile" class="block container">
+        <div class="about-grid">
+          <div>
+            <p class="label">01 / About</p>
+            <h2 class="block-title">
+              A curious mind.<br />A builder's mindset.
+            </h2>
+            <p class="block-text">
+              I am a College Student at the Polytechnic University of the
+              Philippines - Taguig Branch, pursuing a Diploma in Information
+              Technology.
+            </p>
+            <p class="block-text">
+              I am an aspiring Software Developer with a fuel to create positive
+              impact toward Science and Community through programming.
+            </p>
           </div>
-          <h3>Diploma in Information Technology</h3>
-          <p class="edu-school">Polytechnic University of the Philippines</p>
-          <p class="edu-desc">Learning the fundamentals first, then turning them into practical applications built with
-            purpose.</p>
-          <div class="status"><i></i> Open to learning, ideas &amp; collaborations</div>
-        </aside>
-      </div>
-    </section>
 
-    <!--TECHSTACK-->
-    <section id="TechStack" class="block container">
-      <p class="label">02 / Skills</p>
-      <h2 class="block-title">TechStack</h2>
-      <p class="block-text wide">The tools, frameworks, and platforms I use and have experience in.</p>
-
-      <div class="grid-3">
-        <article class="card">
-          <div class="icon">&lt;/&gt;</div>
-          <h3>Frontend foundations</h3>
-          <p>Structuring pages and styling interfaces, one clean layout at a time.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span></div>
-        </article>
-
-        <article class="card">
-          <div class="icon">{ }</div>
-          <h3>Backend foundations</h3>
-          <p>Core programming languages for logic, structure and problem solving.</p>
-          <div class="tags"><span>C++</span><span>C</span><span>Java</span><span>COBOL</span></div>
-        </article>
-
-        <article class="card">
-          <div class="icon">&#9881;</div>
-          <h3>Developer workflow</h3>
-          <p>Everyday tools for writing, tracking and sharing code.</p>
-          <div class="tags"><span>VS Code</span><span>Git</span><span>GitHub</span></div>
-        </article>
-      </div>
-    </section>
-
-    <!--PROJECTS-->
-    <section id="Projects" class="block container">
-      <p class="label">03 / Projects</p>
-      <h2 class="block-title">Small ideas. Real possibilities.</h2>
-      <p class="block-text wide">Self-initiated concept projects: early, honest, and still evolving.</p>
-
-      <div class="grid-3">
-        <article class="card project">
-          <div class="preview">
-            <div class="win"><i></i><i></i><i></i></div>
-            <p class="pv-title">Focus session</p>
-            <div class="ring"><span>25:00</span></div>
-          </div>
-          <p class="label small">Concept 01</p>
-          <h3>Focus</h3>
-          <p class="sub">A calm study timer</p>
-          <p>A concept for staying productive with simple sessions and short breaks.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-        </article>
-
-        <article class="card project">
-          <div class="preview">
-            <div class="win"><i></i><i></i><i></i></div>
-            <p class="pv-title">Campus resources</p>
-            <div class="tiles"><b></b><b></b><b></b><b></b><b></b><b></b></div>
-          </div>
-          <p class="label small">Concept 02</p>
-          <h3>Campus</h3>
-          <p class="sub">Student info, one place</p>
-          <p>A concept hub for schedules, announcements and school resources.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-        </article>
-
-        <article class="card project">
-          <div class="preview">
-            <div class="win"><i></i><i></i><i></i></div>
-            <p class="pv-title">Monthly overview</p>
-            <div class="bars"><b style="height:35%"></b><b style="height:55%"></b><b style="height:42%"></b><b
-                style="height:80%"></b><b style="height:60%"></b><b style="height:95%"></b></div>
-          </div>
-          <p class="label small">Concept 03</p>
-          <h3>Ledger</h3>
-          <p class="sub">Everyday expense tracker</p>
-          <p>A concept for understanding where allowance and savings actually go.</p>
-          <div class="tags"><span>C++</span><span>Java</span></div>
-        </article>
-      </div>
-      <p class="footnote">* Concept projects, currently in progress.</p>
-    </section>
-
-    <!--APPROACH-->
-    <section id="Approach" class="block container">
-      <p class="label">04 / Approach</p>
-      <h2 class="block-title">Think clearly. Build thoughtfully.</h2>
-      <p class="block-text wide">The process I try to follow on every idea.</p>
-
-      <div class="grid-4">
-        <div class="step">
-          <h3>Understand</h3>
-          <p>Ask the right questions before touching any code.</p>
+          <aside class="card edu-card">
+            <div class="edu-top">
+              <span class="chip">Education</span>
+              <span class="chip chip-dim">PUP-Taguig</span>
+            </div>
+            <h3>Diploma in Information Technology</h3>
+            <p class="edu-school">Polytechnic University of the Philippines</p>
+            <p class="edu-desc">
+              Learning the fundamentals first, then turning them into practical
+              applications built with purpose.
+            </p>
+            <div class="status">
+              <i></i> Open to learning, ideas &amp; collaborations
+            </div>
+          </aside>
         </div>
-        <div class="step">
-          <h3>Sketch</h3>
-          <p>Plan the structure and flow before building.</p>
-        </div>
-        <div class="step">
-          <h3>Build</h3>
-          <p>Write simple, readable code one piece at a time.</p>
-        </div>
-        <div class="step">
-          <h3>Refine</h3>
-          <p>Test, learn from mistakes, then improve it.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!--CONTACT-->
-    <section id="Socials" class="block container">
-      <div class="card contact">
-        <div>
-          <h2 class="block-title">Good things start with a conversation.</h2>
-          <p class="block-text">Interested in collaborating, sharing feedback, or just saying hello? My inbox and
-            socials are open.</p>
-          <div class="social-links">
-            <a href="https://www.facebook.com/leanchad.masungsong.7" target="_blank" rel="noopener noreferrer"
-              aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/lean-chad-masungsong-01941b368/" target="_blank"
-              rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/leanchad21-boop" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-              title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <!--TECHSTACK-->
+      <section id="TechStack" class="block container">
+        <p class="label">02 / Skills</p>
+        <h2 class="block-title">TechStack</h2>
+        <p class="block-text wide">
+          The tools, frameworks, and platforms I use and have experience in.
+        </p>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon">&lt;/&gt;</div>
+            <h3>Frontend foundations</h3>
+            <p>
+              Structuring pages and styling interfaces, one clean layout at a
+              time.
+            </p>
+            <div class="tags"><span>HTML</span><span>CSS</span></div>
+          </article>
+
+          <article class="card">
+            <div class="icon">{ }</div>
+            <h3>Backend foundations</h3>
+            <p>
+              Core programming languages for logic, structure and problem
+              solving.
+            </p>
+            <div class="tags">
+              <span>C++</span><span>C</span><span>Java</span><span>COBOL</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="icon">&#9881;</div>
+            <h3>Developer workflow</h3>
+            <p>Everyday tools for writing, tracking and sharing code.</p>
+            <div class="tags">
+              <span>VS Code</span><span>Git</span><span>GitHub</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--PROJECTS-->
+      <section id="Projects" class="block container">
+        <p class="label">03 / Projects</p>
+        <h2 class="block-title">Small ideas. Real possibilities.</h2>
+        <p class="block-text wide">
+          Self-initiated concept projects: early, honest, and still evolving.
+        </p>
+
+        <div class="grid-3">
+          <article class="card project">
+            <div class="preview">
+              <div class="win"><i></i><i></i><i></i></div>
+              <p class="pv-title">Focus session</p>
+              <div class="ring"><span>25:00</span></div>
+            </div>
+            <p class="label small">Concept 01</p>
+            <h3>Focus</h3>
+            <p class="sub">A calm study timer</p>
+            <p>
+              A concept for staying productive with simple sessions and short
+              breaks.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="preview">
+              <div class="win"><i></i><i></i><i></i></div>
+              <p class="pv-title">Campus resources</p>
+              <div class="tiles">
+                <b></b><b></b><b></b><b></b><b></b><b></b>
+              </div>
+            </div>
+            <p class="label small">Concept 02</p>
+            <h3>Campus</h3>
+            <p class="sub">Student info, one place</p>
+            <p>
+              A concept hub for schedules, announcements and school resources.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="preview">
+              <div class="win"><i></i><i></i><i></i></div>
+              <p class="pv-title">Monthly overview</p>
+              <div class="bars">
+                <b style="height: 35%"></b><b style="height: 55%"></b
+                ><b style="height: 42%"></b><b style="height: 80%"></b
+                ><b style="height: 60%"></b><b style="height: 95%"></b>
+              </div>
+            </div>
+            <p class="label small">Concept 03</p>
+            <h3>Ledger</h3>
+            <p class="sub">Everyday expense tracker</p>
+            <p>
+              A concept for understanding where allowance and savings actually
+              go.
+            </p>
+            <div class="tags"><span>C++</span><span>Java</span></div>
+          </article>
+        </div>
+        <p class="footnote">* Concept projects, currently in progress.</p>
+      </section>
+
+      <!--APPROACH-->
+      <section id="Approach" class="block container">
+        <p class="label">04 / Approach</p>
+        <h2 class="block-title">Think clearly. Build thoughtfully.</h2>
+        <p class="block-text wide">
+          The process I try to follow on every idea.
+        </p>
+
+        <div class="grid-4">
+          <div class="step">
+            <h3>Understand</h3>
+            <p>Ask the right questions before touching any code.</p>
+          </div>
+          <div class="step">
+            <h3>Sketch</h3>
+            <p>Plan the structure and flow before building.</p>
+          </div>
+          <div class="step">
+            <h3>Build</h3>
+            <p>Write simple, readable code one piece at a time.</p>
+          </div>
+          <div class="step">
+            <h3>Refine</h3>
+            <p>Test, learn from mistakes, then improve it.</p>
           </div>
         </div>
+      </section>
 
-        <!-- Replace YOUR_FORM_ID with your ID from formspree.io -->
-        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="post">
-          <div class="row">
-            <label>Your name<input type="text" name="name" placeholder="Your name" required></label>
-            <label>Email address<input type="email" name="email" placeholder="you@email.com" required></label>
+      <!--CONTACT-->
+      <section id="Socials" class="block container">
+        <div class="card contact">
+          <div>
+            <h2 class="block-title">Good things start with a conversation.</h2>
+            <p class="block-text">
+              Interested in collaborating, sharing feedback, or just saying
+              hello? My inbox and socials are open.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/leanchad.masungsong.7"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/lean-chad-masungsong-01941b368/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/leanchad21-boop"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                title="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
           </div>
-          <label>Message<textarea name="message" rows="5" placeholder="Tell me what's on your mind..."
-              required></textarea></label>
-          <button type="submit" class="btn btn-primary btn-full">Send message <span>&#8599;</span></button>
-        </form>
-      </div>
-    </section>
 
-    <!--FOOTER-->
-    <footer class="container footer">
-      <a href="#Home" class="brand"><span class="logo"><img src="../images/Yoda.png" alt="Lean Chad logo"></span>Lean
-        Chad</a>
-      <p>&copy; 2026 Lean Chad A. Masungsong</p>
-      <a href="#Home" class="to-top">Back to top &#8593;</a>
-    </footer>
-  </main>
-</body>
+          <!-- Replace YOUR_FORM_ID with your ID from formspree.io -->
+          <form
+            class="form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="post"
+          >
+            <div class="row">
+              <label
+                >Your name<input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+              /></label>
+              <label
+                >Email address<input
+                  type="email"
+                  name="email"
+                  placeholder="you@email.com"
+                  required
+              /></label>
+            </div>
+            <label
+              >Message<textarea
+                name="message"
+                rows="5"
+                placeholder="Tell me what's on your mind..."
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send message <span>&#8599;</span>
+            </button>
+          </form>
+        </div>
+      </section>
 
+      <!--FOOTER-->
+      <footer class="container footer">
+        <a href="#Home" class="brand"
+          ><span class="logo"
+            ><img src="../images/Yoda.png" alt="Lean Chad logo" /></span
+          >Lean Chad</a
+        >
+        <p>&copy; 2026 Lean Chad A. Masungsong</p>
+        <a href="#Home" class="to-top">Back to top &#8593;</a>
+      </footer>
+    </main>
+  </body>
 </html>
